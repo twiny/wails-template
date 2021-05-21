@@ -1,0 +1,8 @@
+build
+assets
+# 
+frontend/src/backend/
+frontend/node_modules/
+frontend/public/build/
+frontend/package.json.md5
+

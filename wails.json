@@ -1,0 +1,13 @@
+{
+    "name": "thegalaxy",
+    "outputfilename": "thegalaxy",
+    "author": {
+        "name": "john doe",
+        "email": "auther@email.com"
+    },
+    "html": "frontend/public/index.html",
+    "js": "frontend/public/build/bundle.js",
+    "css": "frontend/public/build/bundle.css",
+    "frontend:build": "npm run build",
+    "frontend:install": "npm install"
+}
