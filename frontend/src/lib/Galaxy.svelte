@@ -1,7 +1,16 @@
 <script>
     import { createEventDispatcher } from 'svelte';
-
     const dispatch = createEventDispatcher();
+
+    import Planet from './Elements/Planet.svelte';
+    import Mars from './Elements/Icons/Mars.svelte';
+    import Mercury from './Elements/Icons/Mercury.svelte';
+    import Venus from './Elements/Icons/Venus.svelte';
+    import Earth from './Elements/Icons/Earth.svelte';
+    import Jupiter from './Elements/Icons/Jupiter.svelte';
+    import Saturn from './Elements/Icons/Saturn.svelte';
+    import Uranus from './Elements/Icons/Uranus.svelte';
+    import Neptune from './Elements/Icons/Neptune.svelte';
 
     // planets list
     let planets = [
@@ -35,24 +44,72 @@
                     <div
                         class="relative mt-24 mb-24 flex justify-center items-center space-x-4"
                     >
-                        {#each planets as planet}
-                            <div class="inline-block rounded-lg">
-                                <button
-                                    on:click="{() => {
-                                        dispatch('select', planet);
-                                    }}"
-                                    class="hover:shadow-lg"
-                                >
-                                    <div>
-                                        <p
-                                            class="mt-2 text-sm font-semibold text-gray-100"
-                                        >
-                                            {planet}
-                                        </p>
-                                    </div>
-                                </button>
-                            </div>
-                        {/each}
+                        <!-- -->
+                        <Planet
+                            name="{planets[0]}"
+                            on:click="{() => {
+                                dispatch('select', planets[0]);
+                            }}"
+                        >
+                            <Mercury />
+                        </Planet>
+                        <Planet
+                            name="{planets[1]}"
+                            on:click="{() => {
+                                dispatch('select', planets[1]);
+                            }}"
+                        >
+                            <Venus />
+                        </Planet>
+                        <Planet
+                            name="{planets[2]}"
+                            on:click="{() => {
+                                dispatch('select', planets[2]);
+                            }}"
+                        >
+                            <Earth />
+                        </Planet>
+                        <Planet
+                            name="{planets[3]}"
+                            on:click="{() => {
+                                dispatch('select', planets[3]);
+                            }}"
+                        >
+                            <Mars />
+                        </Planet>
+                        <Planet
+                            name="{planets[4]}"
+                            on:click="{() => {
+                                dispatch('select', planets[4]);
+                            }}"
+                        >
+                            <Jupiter />
+                        </Planet>
+                        <Planet
+                            name="{planets[5]}"
+                            on:click="{() => {
+                                dispatch('select', planets[5]);
+                            }}"
+                        >
+                            <Saturn />
+                        </Planet>
+                        <Planet
+                            name="{planets[6]}"
+                            on:click="{() => {
+                                dispatch('select', planets[6]);
+                            }}"
+                        >
+                            <Uranus />
+                        </Planet>
+                        <Planet
+                            name="{planets[7]}"
+                            on:click="{() => {
+                                dispatch('select', planets[7]);
+                            }}"
+                        >
+                            <Neptune />
+                        </Planet>
+                        <!--  -->
                     </div>
                     <!--  -->
                     <div
