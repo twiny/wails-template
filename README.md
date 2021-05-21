@@ -18,4 +18,4 @@ then open `http://localhost:5000`
 run `wails build -clean -package -production`
 
 ## Demo
-![alt text](./demo_app.png "Awesome Wails App")
+![alt text](./screen_shot.png "Awesome Wails App")
