@@ -32,7 +32,7 @@
                 class="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20"
             >
                 <div
-                    class="relative pb-10 h-full w-full rounded-2xl shadow-xl overflow-hidden"
+                    class="relative pb-10 rounded-2xl shadow-xl overflow-hidden"
                 >
                     <div
                         class="absolute inset-0 bg-indigo-500 mix-blend-multiply"

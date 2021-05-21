@@ -14,7 +14,7 @@
     aria-modal="true"
 >
     <div
-        class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0"
+        class="flex items-end justify-center mt-24 pt-4 px-4 pb-20 text-center sm:block sm:p-0"
     >
         <div
             class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
@@ -22,9 +22,8 @@
         ></div>
 
         <!-- This element is to trick the browser into centering the modal contents. -->
-        <span
-            class="hidden sm:inline-block sm:align-middle sm:h-screen"
-            aria-hidden="true">&#8203;</span
+        <span class="hidden sm:inline-block sm:align-middle" aria-hidden="true"
+            >&#8203;</span
         >
         <div
             class="inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6"

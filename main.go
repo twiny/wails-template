@@ -17,8 +17,8 @@ func main() {
 
 	err := wails.Run(&options.App{
 		Title:         "The Galaxy",
-		Width:         800,
-		Height:        460,
+		Width:         740,
+		Height:        569,
 		DisableResize: true,
 		Mac: &mac.Options{
 			WebviewIsTransparent:          true,
